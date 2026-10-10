@@ -1,13 +1,9 @@
-  {
-    "name": "barber-online-appointment",
-    "version": "1.0.0",
-    "private": true,
+{
+  "name": "barber-online-appointment",
+  "version": "1.0.0",
+  "private": true,
   "scripts": {
-    "dev": "concurrently -n server,client -c yellow,cyan \"npm:dev:server\" \"npm:dev:client\"",
-    "dev:server": "npm --prefix server run dev",
-    "dev:client": "npm --prefix client run dev",
-    "build": "npm --prefix client run build",
-    "lint": "npm --prefix client run lint"
+    "build": "npm --prefix client install && npm --prefix client run build"
   },
   "devDependencies": {
     "concurrently": "^9.2.1"
