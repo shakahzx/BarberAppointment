@@ -1,7 +1,7 @@
-{
-  "name": "barber-online-appointment",
-  "version": "1.0.0",
-  "private": true,
+  {
+    "name": "barber-online-appointment",
+    "version": "1.0.0",
+    "private": true,
   "scripts": {
     "dev": "concurrently -n server,client -c yellow,cyan \"npm:dev:server\" \"npm:dev:client\"",
     "dev:server": "npm --prefix server run dev",
